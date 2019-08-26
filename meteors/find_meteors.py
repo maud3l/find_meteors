@@ -1,7 +1,7 @@
 import math
 import requests
 
-def calc_dist(lat1, lon1, lat2, log2):
+def calc_dist(lat1, lon1, lat2, lon2):
     lat1 = math.radians(lat1)
     lon1 = math.radians(lon1)
     lat2 = math.radians(lat2)
@@ -33,4 +33,4 @@ if __name__ == '__main__':
 
         meteor_data.sort(key=get_dist)
 
-        print(meteor_date[0:10])
+        print(meteor_data[0:10])
